@@ -67,7 +67,6 @@
             width: 100%;
         }
 
-        /* Tabla estilizada */
         table {
             width: 100%;
             margin-top: 20px;
@@ -90,7 +89,6 @@
         tr:hover {
             background-color: #e9ecef;
         }
-        /* Formulario */
         form {
             background-color: #ffffff;
             padding: 20px;
@@ -118,8 +116,10 @@
             cursor: pointer;
             transition: background-color 0.3s;
         }
-        input[type="submit"]:hover {
+        input[type="submit"]:hover, input[type="submit"]:focus {
             background-color: #218838;
+            outline: 3px solid #007bff;
+            outline-offset: 2px;
         }
     </style>
 </head>
@@ -132,21 +132,18 @@
 
 <div class="container">
 
-    <!-- Introducción del contenido -->
     <section role="region" aria-labelledby="section1">
         <h2 id="section1">Protección Auditiva y Calidad de Sonido</h2>
         <p class="content">
-            Los músicos están expuestos a niveles de sonido elevados que pueden dañar la audición con el tiempo. Los audífonos In Ear están diseñados para reducir el ruido ambiental y ofrecer un monitoreo preciso sin necesidad de subir el volumen excesivamente. Como músico en vivo activo, siempre me he preocupado por mi salud auditiva y cada vez que olvidaba mis audífonos protectores, sufría demasiado al finalizar los ensayos o eventos y siempre les he insistido a mis compañeros que usen protección para sus oídos, afortunadamente, después de años ya me están haciendo caso.
+            Los músicos están expuestos a niveles de sonido elevados que pueden dañar la audición con el tiempo. Los audífonos In Ear están diseñados para reducir el ruido ambiental y ofrecer un monitoreo preciso sin necesidad de subir el volumen excesivamente...
         </p>
     </section>
 
-    <!-- Imagen con descripción accesible -->
     <section class="image-section">
         <h2>Diseño Ergonómico y Aislamiento</h2>
         <img src="https://www.westoneaudio.eu/cdn/shop/articles/In-ear_monitors_live_performance_-_Blog_1024x1024.png?v=1701340734" alt="Audífonos In Ear utilizados por un músico durante un concierto" role="img" aria-label="Músico usando audífonos In Ear durante un concierto">
     </section>
 
-    <!-- Beneficios para músicos -->
     <section role="region" aria-labelledby="section2">
         <h2 id="section2">Beneficios Clave para los Músicos</h2>
         <ul class="content" role="list">
@@ -156,47 +153,16 @@
             <li role="listitem">Sonido nítido y balanceado para una experiencia auditiva profesional.</li>
         </ul>
     </section>
-
     <section class="image-section">
-        <h2>Ideal para el Escenario y el Estudio</h2>
-        <img src="https://media.sweetwater.com/m/insync/2018/08/in-ear-hero.jpg" alt="Audífonos In Ear colocados junto a una consola de mezcla de audio" role="img" aria-label="Audífonos In Ear sobre una consola de mezcla de audio en un estudio de grabación">
+        <h2>Diseño Ergonómico y Aislamiento</h2>
+        <img src="https://www.sweetwater.com/sweetcare/media/2013/07/IEM-Hero.png" alt="Audífonos In Ear azules" role="img" aria-label="Audífonos In Ear azules">
     </section>
 
     <section role="region" aria-labelledby="section3">
         <h2 id="section3">Conclusión</h2>
         <p class="content">
-            Los audífonos In Ear no solo mejoran la calidad del sonido, sino que también protegen la audición de los músicos al reducir la exposición prolongada a ruidos intensos. Una herramienta indispensable para quienes buscan cuidar su salud auditiva mientras disfrutan de su pasión por la música.
+            Los audífonos In Ear no solo mejoran la calidad del sonido, sino que también protegen la audición de los músicos al reducir la exposición prolongada a ruidos intensos...
         </p>
-    </section>
-
-    <section role="region" aria-labelledby="section4">
-        <h2 id="section4">Características Técnicas</h2>
-        <table role="table" aria-labelledby="section4">
-            <thead>
-                <tr role="row">
-                    <th role="columnheader">Característica</th>
-                    <th role="columnheader">Descripción</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr role="row">
-                    <td role="cell">Reducción de Ruido</td>
-                    <td role="cell">Hasta 30 dB para un aislamiento perfecto del sonido ambiental.</td>
-                </tr>
-                <tr role="row">
-                    <td role="cell">Conectividad</td>
-                    <td role="cell">Conexión por cable de 3.5mm o Bluetooth según modelo.</td>
-                </tr>
-                <tr role="row">
-                    <td role="cell">Rango de Frecuencia</td>
-                    <td role="cell">20 Hz - 20 kHz para una respuesta de sonido completa.</td>
-                </tr>
-                <tr role="row">
-                    <td role="cell">Comodidad</td>
-                    <td role="cell">Almohadillas de silicona para un ajuste perfecto y cómodo.</td>
-                </tr>
-            </tbody>
-        </table>
     </section>
 
     <section role="form" aria-labelledby="section5">
@@ -204,20 +170,12 @@
         <form action="#" method="post" aria-labelledby="section5">
             <label for="name">Nombre:</label>
             <input type="text" id="name" name="name" required aria-required="true" placeholder="Escribe tu nombre"><br><br>
-
             <label for="email">Correo Electrónico:</label>
             <input type="email" id="email" name="email" required aria-required="true" placeholder="Escribe tu correo electrónico"><br><br>
-
             <input type="submit" value="Enviar">
         </form>
     </section>
-
-    <!-- Video con subtítulos accesibles -->
-    <section role="region" aria-labelledby="section6">
-        <h2 id="section6">Video de Demostración</h2>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/pdEfIk42QtU?si=eFBsJ1cHE_qkrxgM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        <p>Este video muestra cómo los audífonos In Ear protegen la audición mientras ofrecen una calidad de sonido excepcional. Asegúrate de activar los subtítulos para una mejor experiencia.</p>
-    </section>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/pdEfIk42QtU?si=1KwVUx29KcPEOS1I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
     <section role="region" aria-labelledby="section7">
         <h2 id="section7">Enlaces Relacionados</h2>
@@ -230,8 +188,6 @@
     </section>
 
 </div>
-
-
 
 </body>
 </html>
